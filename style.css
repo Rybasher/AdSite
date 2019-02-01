@@ -1,0 +1,216 @@
+*{
+	margin: 0;
+	padding: 0;
+
+}
+a{
+	text-decoration: none;
+
+}
+li{
+	text-decoration: none;
+	list-style: none;
+}
+body{
+
+	font-family: 'Raleway', sans-serif;
+
+}
+.logo{
+	background-color: #000;
+	width: 100%;
+	display: flex;
+	justify-content: center;	
+}
+.graphiclogo{
+	padding: 5px;
+	max-width: 100%; /* Для адаптивности */
+	box-sizing: border-box; /*изменяет алгоритмы расчета ширины и высоты*/
+}
+nav{
+	margin: auto;
+	width: 800px;
+	height: 50px;
+}
+.topnav{
+	background-color: #fff;
+	font-size: 14px;
+	margin-top: 40px;
+
+}
+.topnav a{
+	color: #000;
+	text-align: center;
+	padding: 14px 16px;
+	font-size: 15px;
+
+}
+.topnav a:hover{
+	border-bottom: 2px solid grey;
+	color: grey;
+}
+.topnav .icon{
+	display: none;
+}
+.dropdown {
+	display: none
+}
+.topnav:hover .dropdown{
+	display: block;
+}
+
+
+.mw-100{
+	margin-left: 25%;
+	width: 50%;
+	height: 50%;
+	max-width: 100%
+
+}
+
+.advantages_container{
+	display: flex;
+	justify-content: center;
+}
+.advantages{
+	padding-top: 40px;
+	padding-bottom: 40px;
+	width: 70%;
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	flex-wrap: wrap; /* правило вывода флекс элемента в одну или несколько. это в несколько*/
+
+}
+.advantages_item{
+	width: 30%
+}
+.gallery{
+	width: 40%;
+	margin: auto;
+	display: flex;
+	margin-bottom: 50px;
+}
+.photo-itm img{
+	box-sizing: border-box;
+	max-width: 100%;
+	opacity: 0.7;
+	border-radius: 50%
+}
+.photo-itm img:hover{	
+	border-bottom: 3px solid black;
+	opacity: 1;
+}
+
+footer{
+	width: 100%
+	height: auto;
+	background: #000;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 25px;
+}
+footer a{
+	color: white;
+	font-size: 14px;
+	margin-left: 10px;
+}
+footer nav a:hover{
+	border-bottom: 1px solid white;
+}
+.social img{
+	width: 50px;
+	height: 50px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+.social img:hover{
+	background: #494949;
+	border-radius: 50%;
+}
+footer p{
+	color: white;
+}
+
+.blog-container{
+	background: #fafafa;
+	border-radius: 5px;
+	box-shadow: rgba(0,0,0,0.2) 0 4px 2px -2px;
+	font-weight: 100;
+	margin: 48px auto;
+	width: 60rem;
+
+}
+.blog-container a:hover{
+	border-color: #ff4d4d;
+	color: #ff4d4d;
+}
+.blog-cover{
+	background: url(../img/fon/fon.jpg);
+	background-size: cover;
+	border-radius: 5px 5px; 0 0;
+	height: 15rem;
+	box-shadow: inset rgba(0,0,0,0.2) 0 6px 16px;
+
+}
+
+
+
+
+@media screen and (max-width: 768px){
+	.topnav a:not(:first-child){
+		display: none;
+	}
+	.topnav a.icon{
+		float: right;
+		margin-top: -17px;
+		display: block;
+		color: black;
+	}
+	nav{
+		width: 100%;
+		height: 100px;
+	}
+	.topnav.responsive{
+		position: relative;
+	}
+	.topnav.responsive a.icon{
+		 position: absolute;
+		 right: 0;
+		 top: 0;
+	}
+	.topnav.responsive a{
+		float: none;
+		display: block;
+		text-align: left;
+	}
+	.advantages_item{
+	width: 45%
+	}
+	/*.photo-itm{ если фоток больше */
+		width: 55%
+	}
+}
+@media screen and (max-width: 520px){
+	.advantages{
+		flex-direction: column; /* направление флекс элементов*/
+
+		}
+	.advantages_item{
+	width: 100%
+	}
+	.project{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.gallery{
+		width: auto;
+		margin: auto;
+	}
+	.photo-itm{
+		width: 70%;
+		margin: 0 auto;
+		
+	}
+}

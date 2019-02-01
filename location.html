@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<div class="logo">
+			<a href="index.html"><img class="graphiclogo" src="img/logo.png"  alt="Logo"></a>
+		</div>
+		<nav>
+			<div class="topnav" id="mytopnav">
+				<a href="index.html">Home</a>
+
+				<a href="projects.html">PROJECTS</a>
+				<a href="blog.html">BLOG</a>
+				<a href="contcts.html">CONTSCTS</a>
+				<a href="about.html">ABOUT</a>
+				<a href="services.html">SERVICES</a>
+				<a href="location.html">LOCATION</a>
+				<a  id="menu" href="#" class="icon">&#9776;</a>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<h1>Location</h1>
+		<div id="map"></div>
+
+	</main>
+	<footer>
+		<nav>
+			<a href="index.html">Home</a>
+
+				<a href="projects.html">PROJECTS</a>
+				<a href="blog.html">BLOG</a>
+				<a href="contcts.html">CONTSCTS</a>
+				<a href="about.html">ABOUT</a>
+				<a href="services.html">SERVICES</a>
+				<a href="location.html">LOCATION</a>
+				
+		</nav>
+		<div class="logo">
+			<a href="index.html"><img src="img/logo.png" class="graphiclogo"></a>
+		</div>
+		<div class="social">
+			<a href="#"><img src="img/soc/inst.png"></a>
+			<a href="#"><img src="img/soc/face.png"></a>
+			<a href="#"><img src="img/soc/you.png"></a>
+		</div>
+		<p>Kirill Leontev Blog 2019</p>
+	</footer>
+<script>
+// Initialize and add the map
+	function initMap() {
+  // The location of Uluru
+  	var uluru = {lat: 46.4598865, lng: 30.571704};
+  // The map, centered at Uluru
+  	var map = new google.maps.Map(document.getElementById('map'), {zoom: 5, center: uluru});
+  // The marker, positioned at Uluru
+  	var marker = new google.maps.Marker({
+  		position: uluru, 
+  		map: map});
+}
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCR4jEvcofSYni-lsFf8k6ui2yIlAhzmDA&callback=initMap">
+    </script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
